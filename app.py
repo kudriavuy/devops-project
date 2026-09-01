@@ -2,8 +2,10 @@ import os
 import time
 import psycopg2
 from flask import Flask
+from prometheus_flask_expoter import PrometheusMetrics
 
 app = Flask(__name__)
+metrics = PrometheusMetrics(app)
 
 DB_HOST = os.environ.get('DB_HOST', 'localhost')
 DB_NAME = os.environ.get('DB_NAME', 'devops_db')

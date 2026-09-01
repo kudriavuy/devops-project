@@ -3,3 +3,4 @@ Werkzeug==3.0.1
 pytest
 flake8
 psycopg2-binary
+prometheus-flask-exporter
