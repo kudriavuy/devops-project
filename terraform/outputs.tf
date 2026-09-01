@@ -10,5 +10,5 @@ output "prometheus_url" {
 
 output "grafana_url" {
     value       = "http://localhost:3000"
-    description = "Панель Grafana (Логін: admin / Пароль: admin)
+    description = "Панель Grafana (Логін: admin / Пароль: admin)"
 }
