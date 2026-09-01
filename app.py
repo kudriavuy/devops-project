@@ -2,7 +2,7 @@ import os
 import time
 import psycopg2
 from flask import Flask
-from prometheus_flask_expoter import PrometheusMetrics
+from prometheus_flask_exporter import PrometheusMetrics
 
 app = Flask(__name__)
 metrics = PrometheusMetrics(app)
