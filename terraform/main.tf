@@ -7,7 +7,9 @@ terraform {
   }
 }
 
-provider "docker" {}
+provider "docker" {
+  host = "unix:///home/volodymyr/.docker/desktop/docker.sock"
+}
 
 # 1. Спільна внутрішня мережа
 resource "docker_network" "app_net" {
