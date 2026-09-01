@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Привіт! Це мій перший проєкт. Версія 1.0"
+    return "Hello from DevOps Pipeline v2.0!"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
